@@ -23,8 +23,8 @@ class Company
       "http://localhost:5000/api/v1/companies.json",
       headers: {
         "Accept" => "application/json",
-        "Authorization" => "Token token=123",
-        "X-User-Email" => "cool@gmail.com"
+        "Authorization" => "Token token=#{ENV['123']}",
+        "X-User-Email" => ENV["cool@gmail.com"]
       }
     ).body
     companies_array.map do |company|
