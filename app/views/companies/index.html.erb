@@ -1,0 +1,10 @@
+<h1>Our great companies of Floor Street:</h1>
+<% @companies.each do |company| %>
+<%= company.id %><%= company.name %>
+<ul>
+  <li><%= company.buzz_department %></li>
+</ul>
+
+<br>
+<br>
+<% end %>

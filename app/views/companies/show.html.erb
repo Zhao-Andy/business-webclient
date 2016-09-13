@@ -1,0 +1,9 @@
+<h1>Here is your one company of Floor St:</h1>
+
+<%= @company.name %>
+<%= @company.department %>
+<%= @company.buzzword %>
+<%= @company.slogan %>
+
+<p><%= link_to "Edit your Company Info", "/companies/#{@company.id}/edit" %></p>
+<p><%= link_to "Dissolve your company because you went bankrupt", "/companies/#{@company.id}", method: :delete %></p>
